@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.road {
+    position: relative;
+    width: 100vw;
+    height: 200px;
+    background-color: gray;
+    margin-top: 200px;
+}
+
+#bike {
+    position: absolute;
+    width: 200px;
+    animation: bikeanimgo 4s infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes bikeanimgo {
+    0% {
+        transform: scaleX(1);
+        left: 0;
+    }
+    30% {
+        transform: scaleX(1);
+        left: 85%;
+    }
+    40% {
+        transform: scaleX(-1);
+        left: 85%;
+    }
+    70% {
+        transform: scaleX(-1);
+        left: 0;
+    }
+    80% {
+        transform: scaleX(1);
+        left: 0;
+    }
+    100% {
+        left: 0;
+        transform: scaleX(1);
+    }
+}
+

@@ -1,0 +1,55 @@
+.field {
+    height: 500px;
+    position: relative;
+    border: 1px solid red;
+}
+.field > * {
+    border: 1px solid black;
+}
+#p1 {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 300px;
+    z-index: 1;
+}
+#p2 {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 300px;
+    z-index: 1;
+}
+#grass {
+    position: absolute;
+    bottom: 0;
+}
+#ball {
+    position: absolute;
+    left: 15%;
+    width: 50px;
+    bottom: 12%;
+    z-index: 1;
+    animation: ballanimation 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    
+}
+
+@keyframes ballanimation {
+    0% {
+        left: 15%;
+        bottom: 12%;
+        animation-timing-function: ease-out;
+    }
+    50% {
+        left: 50%;
+        bottom: 80%;
+        animation-timing-function: ease-in;
+    }
+    100% {
+        left: 85%;
+        bottom: 12%;
+        animation-timing-function: ease-out;    
+    }
+}
